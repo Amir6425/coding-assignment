@@ -7,11 +7,17 @@ exports.sumAndCheck =  async (req, res) => {
         sum = arraysSum(numbers.split(","))
         
     } catch (error) {
-        res.send({Result:"Something went wrong"})
+        res.status(404).json({ 
+            error: error.toString() 
+          });
     }
 
     res.json({Result: sum, isPrime:isPrime(sum)})
 } 
+
+exports.notFound = ('*', function(req, res) {
+    res.send({Error: "Page does not exist"})
+  });
 
 exports.checkPrime = async (req, res) => {
     let number;
