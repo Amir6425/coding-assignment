@@ -1,3 +1,4 @@
+//Takes params and return sum of numbers and true/flase for isPrime(sum).
 exports.sumAndCheck =  async (req, res) => {
     let numbers, sum;
     numbers = await req.params.numbers;    
@@ -11,10 +12,8 @@ exports.sumAndCheck =  async (req, res) => {
   
 } 
 
-exports.notFound = ('*', function(req, res) {
-    res.send({Error: "Page does not exist"})
-  });
 
+//Takse parmas and return true/false for isPrami(number).
 exports.checkPrime = async (req, res) => {
     let number;
     number = await parseInt(req.params.number);
@@ -24,6 +23,11 @@ exports.checkPrime = async (req, res) => {
     }
     res.send({isPrime: isPrime(number)})
 }
+
+
+exports.notFound = ('*', function(req, res) {
+    res.send({Error: "Page does not exist"})
+  });
  
 
 const arraysSum = (arr)=>{
