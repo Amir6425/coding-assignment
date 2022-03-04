@@ -24,12 +24,12 @@ exports.checkPrime = async (req, res) => {
     res.send({isPrime: isPrime(number)})
 }
 
-
+//Return error for not found endpoints.
 exports.notFound = ('*', function(req, res) {
     res.send({Error: "Page does not exist"})
   });
  
-
+//Takes an array and return sum of all numbers in the array
 const arraysSum = (arr)=>{
     let sum = 0;
     arr.forEach(num => {
@@ -38,6 +38,7 @@ const arraysSum = (arr)=>{
     return sum;
 }
 
+//Check is num prime number or not.
 const isPrime = (num) =>{
     if(num ==1 || num == 2){
         return true;
