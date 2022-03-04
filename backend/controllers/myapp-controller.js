@@ -1,18 +1,14 @@
 exports.sumAndCheck =  async (req, res) => {
     let numbers, sum;
-   
-    try {
-        numbers = await req.params.numbers;
-        
-        sum = arraysSum(numbers.split(","))
-        
-    } catch (error) {
-        res.status(404).json({ 
-            error: error.toString() 
-          });
+    numbers = await req.params.numbers;    
+    sum = arraysSum(numbers.split(","))
+    if(isNaN(sum) || sum <= 0){
+        res.send({Result: "Wrong input"})
+        return
     }
+    res.send({Result: sum, isPrime:isPrime(sum)})
 
-    res.json({Result: sum, isPrime:isPrime(sum)})
+  
 } 
 
 exports.notFound = ('*', function(req, res) {
@@ -21,11 +17,10 @@ exports.notFound = ('*', function(req, res) {
 
 exports.checkPrime = async (req, res) => {
     let number;
-    try {
-        number = await pareInt(req.params.number);
-        
-    } catch (error) {
-        
+    number = await parseInt(req.params.number);
+    if(isNaN(number) || number <= 0){
+        res.send({Result: "Wrong input"}); 
+        return
     }
     res.send({isPrime: isPrime(number)})
 }

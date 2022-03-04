@@ -4,15 +4,23 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand --force-exit"
   },
   "repository": {
     "type": "git",
     "url": "coding-assignment"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "Amir Tirna",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }
