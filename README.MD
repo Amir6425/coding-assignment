@@ -7,8 +7,8 @@ This project has two features.
 
 ## Prerequisite
 - [NodeJS](https://nodejs.dev/) installed
-- [npm] (https://docs.npmjs.com/cli/v7/configuring-npm/install) installed
-- [git] (https://git-scm.com/) installed 
+- [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) installed
+- [git](https://git-scm.com/) installed 
 
 ## Installation Steps
 1. Clone the repository\
