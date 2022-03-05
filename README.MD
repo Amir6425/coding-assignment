@@ -7,10 +7,12 @@ This project has two features.
 
 ## Prerequisite
 - [NodeJS](https://nodejs.dev/) installed
+- [npm] (https://docs.npmjs.com/cli/v7/configuring-npm/install) installed
+- [git] (https://git-scm.com/) installed 
 
 ## Installation Steps
 1. Clone the repository\
-    &emsp;``` $ https://github.com/Amir6425/coding-assignment.git ```  
+    &emsp;```clone -b master https://github.com/Amir6425/coding-assignment.git ```  
 2. Change the working directory\
      &emsp;``` $ cd coding-assignment ``` 
 3. Change the working directory for backend to:\
@@ -28,8 +30,8 @@ This project has two features.
 9. After dependencies installation. Run react:\
     &emsp;``` $ npm start ```
 
-    
-After last step app will be running at localhost:3000 and you can use it.
+
+After last step app will be ready to use at localhost:3000.
 
 
 ## Built With
@@ -37,4 +39,6 @@ After last step app will be running at localhost:3000 and you can use it.
 - Node
 - Express
 - React
+
+Cloned and tested on Ubuntu, MacOS and Windows 10. (Used git bash on Windows.)
 
