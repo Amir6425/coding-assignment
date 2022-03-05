@@ -26,7 +26,7 @@ This project has two features.
 8. Installa all dependencies\
     &emsp;``` $ npm install ``` 
 9. After dependencies installation. Run react:\
-    &emsp;``` $ npm start ``` 
+    &emsp;``` $ npm start ``` \
 After last step app will be running at localhost:3000 and you can use it.
 
 
