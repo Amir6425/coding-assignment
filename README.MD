@@ -19,11 +19,11 @@ This project has two features.
    &emsp;``` $ npm install ``` 
 5. After dependencies installation. Run srver:\
     &emsp;``` $ node server.js or $ nodemon server.js ``` 
-6. For backent testing\
+6. For backend testing\
     &emsp;``` $ npm test ```
 7. Change the working directory for frontend to:\
     &emsp;``` $ cd frontend ``` 
-8. Installa all dependencies
+8. Installa all dependencies\
     &emsp;``` $ npm install ``` 
 9. After dependencies installation. Run react:\
     &emsp;``` $ npm start ``` 
