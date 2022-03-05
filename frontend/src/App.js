@@ -9,7 +9,7 @@ function App() {
   const [num, setNum] = useState()
   const [isMultipleNumbers, setMultipleNumbers] = useState(false);
   const [result, setResult] = useState();
-  const [display, setDisplay] = useState(false)
+  const [showResult, setShowResult] = useState(false)
   const[enteredNumbers, setEnteredNumbers] = useState()
   
   const handleChange = e =>{
@@ -19,7 +19,7 @@ function App() {
       } else {
           setMultipleNumbers(false)
       }
-      setDisplay(false);
+      setShowResult(false);
   }
   const handleSubmit = async (e) => {
       e.preventDefault();
@@ -36,7 +36,7 @@ function App() {
       } 
       console.log(response.data)
       setResult(response.data)
-      setDisplay(true)
+      setShowResult(true)
       setEnteredNumbers(num)
       setNum("")
     }
@@ -46,11 +46,11 @@ function App() {
       <h3>
           Prime Number Checker
       </h3>
-      <p>Enter an integer or 1 to n integers. Use comma to separate integers:</p>
+      <p>Enter an integer or 1 to n integers. Use comma to separate integers</p>
       <Form num={num} handleChange={handleChange} handleSubmit={handleSubmit} />
 
 {(() => {
-            if (!display) {
+            if (!showResult) {
               return (
                 <p></p>
               )

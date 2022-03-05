@@ -1,4 +1,4 @@
-//Takes params and return sum of numbers and true/flase for isPrime(sum).
+//Takes multiple integers as input, calculates the sum, and returns the sum including information whether the sum is a prime number or not.
 exports.sumAndCheck =  async (req, res) => {
     let numbers, sum;
     numbers = await req.params.numbers;    
@@ -13,7 +13,7 @@ exports.sumAndCheck =  async (req, res) => {
 } 
 
 
-//Takse parmas and return true/false for isPrami(number).
+// Takes one integer as input, and returns information whether the sum is a prime number or not.
 exports.checkPrime = async (req, res) => {
     let number;
     number = await parseInt(req.params.number);
@@ -29,7 +29,7 @@ exports.notFound = ('*', function(req, res) {
     res.send({Error: "Page does not exist"})
   });
  
-//Takes an array and return sum of all numbers in the array
+//Takes an array and return sum of all integers in the array
 const arraysSum = (arr)=>{
     let sum = 0;
     arr.forEach(num => {
@@ -38,7 +38,7 @@ const arraysSum = (arr)=>{
     return sum;
 }
 
-//Check is num prime number or not.
+//Checks is an integer prime number or not.
 const isPrime = (num) =>{
     if(num ==1 || num == 2){
         return true;
