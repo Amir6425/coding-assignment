@@ -12,9 +12,11 @@ This project has two features.
 
 ## Installation Steps
 - Clone the repository\
-    &emsp;`clone -b master https://github.com/Amir6425/coding-assignment.git `
+    &emsp;
+    ```
+    clone -b master https://github.com/Amir6425/coding-assignment.git
+    ```
 - Change working directory first to backend directory and exexutes these commends:  
-
      &emsp;
      ``` 
      $ npm install
@@ -33,10 +35,10 @@ This project has two features.
 After last step app will be ready to use at localhost:3000.
 
 ## Task List
-- [x] Backent functionality 
-- [x] Backent tests
+- [x] Backend functionality 
+- [x] Backend tests
 - [x] Frontend functionality
-- [/] Frontend tests. (are not comprehensive)
+- [ ] Frontend tests. (are not comprehensive)
 
 ## Built With
 
