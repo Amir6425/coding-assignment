@@ -14,7 +14,7 @@ This project has two features.
 - Clone the repository\
     &emsp;
     ```
-    clone -b master https://github.com/Amir6425/coding-assignment.git
+    git clone -b master https://github.com/Amir6425/coding-assignment.git
     ```
 - Change working directory first to backend directory and executes the commands:  
      &emsp;
