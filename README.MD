@@ -16,7 +16,7 @@ This project has two features.
     ```
     clone -b master https://github.com/Amir6425/coding-assignment.git
     ```
-- Change working directory first to backend directory and exexutes these commends:  
+- Change working directory first to backend directory and executes the commands:  
      &emsp;
      ``` 
      $ npm install
