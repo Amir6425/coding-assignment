@@ -20,14 +20,26 @@ This project has two features.
      &emsp;
      ``` 
      $ npm install
+     ```
+     &emsp;
+     ``` 
      $ npm test 
+     ```
+     &emsp;
+     ```
      $ npm node server.js or nodemon server.js
      ``` 
 - Same commands in frontend directory:
- &emsp;
+    &emsp;
      ``` 
      $ npm install
+     ```
+     &emsp;
+     ``` 
      $ npm test 
+     ```
+     &emsp;
+     ```
      $ npm start
      ``` 
 
