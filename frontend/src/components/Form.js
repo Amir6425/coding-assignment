@@ -1,8 +1,4 @@
-import Number from "./Number";
-import Numbers from "./Numbers";
 import Button from "./Button";
-
-
 
 const Form = (props) =>{
  

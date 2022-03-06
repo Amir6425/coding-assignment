@@ -1,4 +1,3 @@
-import Form from "./Form";
 const Numbers = (props) => { 
     return(
         <div>

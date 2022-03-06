@@ -2,12 +2,12 @@
 exports.sumAndCheck =  async (req, res) => {
     let numbers, sum;
     numbers = await req.params.numbers;    
-    sum = arraysSum(numbers.split(","))
-    if(isNaN(sum) || sum <= 0){
-        res.send({Result: "Wrong input"})
-        return
+    sum = arraysSum(numbers.split(","));
+    if(checkInput(sum)) {
+        res.send({error: "Wrong input"});
+        return;
     }
-    res.send({Result: sum, isPrime:isPrime(sum)})
+    res.send({result: sum, isPrime:isPrime(sum)});
 
   
 } 
@@ -17,28 +17,34 @@ exports.sumAndCheck =  async (req, res) => {
 exports.checkPrime = async (req, res) => {
     let number;
     number = await parseInt(req.params.number);
-    if(isNaN(number) || number <= 0){
-        res.send({Result: "Wrong input"}); 
-        return
+    if(checkInput(number)) {
+        res.send({error: "Wrong input"});
+        return;
     }
-    res.send({isPrime: isPrime(number)})
+    res.send({isPrime: isPrime(number)});
 }
 
 //Return error for not found endpoints.
 exports.notFound = ('*', function(req, res) {
-    res.send({Error: "Page does not exist"})
-  });
+    res.send({error: "Page does not exist"}); 
+});
+
+const checkInput = (number) =>{
+    if(isNaN(number) || number <= 0){ 
+        return true;
+    }
+    return false;
+}
  
 //Takes an array and return sum of all integers in the array
 const arraysSum = (arr)=>{
     let sum = 0;
     arr.forEach(num => {
-        sum += parseInt(num)
+        sum += parseInt(num);
     });
     return sum;
 }
 
-//Checks is an integer prime number or not.
 const isPrime = (num) =>{
     if(num ==1 || num == 2){
         return true;

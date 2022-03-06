@@ -6,7 +6,7 @@ import Numbers from "./components/Numbers";
 import './App.css';
 
 function App() {
-  const [num, setNum] = useState()
+  const [num, setNum] = useState("")
   const [isMultipleNumbers, setMultipleNumbers] = useState(false);
   const [result, setResult] = useState();
   const [showResult, setShowResult] = useState(false)
